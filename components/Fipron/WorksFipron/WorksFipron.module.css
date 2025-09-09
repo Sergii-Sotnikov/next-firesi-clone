@@ -1,0 +1,83 @@
+.works{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: clamp(13px, 5vw, 20px);
+  padding-bottom: clamp(40px, 9vw, 50px);
+  --gutter: clamp(12px, 4vw, 20px);
+}
+
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  box-sizing: border-box;
+}
+
+.worksTitle {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Cera Stencil PRO", sans-serif;
+  font-weight: 900;
+  font-style: Black;
+  font-size: clamp(20px, 6.2vw, 28px);
+  line-height: 1;
+  text-align: center;
+  margin: 0 0 clamp(22px, 10vw, 40px) 0;
+}
+
+.videoWrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: clamp(8px, 3vw, 12px);
+  overflow: hidden;
+}
+
+.videoWrapper iframe,
+.videoWrapper video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (min-width: 1440px) {
+  .works {
+    width: 100%;
+  padding: 60px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 150px;
+  min-width: 100%;
+}
+
+.worksTitle {
+  color: #ffffff;
+  text-transform: uppercase;
+font-family: "Cera Stencil PRO", sans-serif;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 0px;
+}
+
+.videoWrapper {
+  min-width: 1140px;
+  height: 645px;
+  margin: 0 auto;
+  border-radius: 40px;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+}
+
+}
+
