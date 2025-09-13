@@ -90,16 +90,12 @@ export default async function CertificatesLayout({
 }) {
 
   return (
-    <html lang="uk"
-    className={`${RobotoFont.variable} ${InterFont.variable}`}
-    >
-      <body>
+<>
             <HeaderCertificates />
             <main>{children}</main>
             <ContactMobile/>
             <Footer />
             <div id="modal-root" />
-      </body>
-    </html>
+</>
   );
 }
